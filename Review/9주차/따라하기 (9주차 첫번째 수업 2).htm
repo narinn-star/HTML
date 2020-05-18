@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 속성</title>
+    <style type="text/css">
+        b {
+            color: blue;
+            font-weight: bold
+        }
+
+        h1 {
+            color: green;
+            font-family: 궁서체
+        }
+
+        p {
+            color: red;
+            font-size: 20pt;
+        }
+
+        .ft {
+            color: gray;
+            font-weight: bold
+        }
+
+        .fts {
+            font: italic 25px 궁서체
+        }
+
+        /*축약형은 {font:속성 속성...} size는 필수이며 
+    style, variant, weight, size, family 순서로 입력한다. */
+    </style>
+</head>
+
+<body>
+    보통 글자<br><br>
+    <b>파란색 굵은 글자</b>
+    <h1>초록색 궁서체</h1>
+    <p>크기가 20pt인 빨간색 글자</p>
+    <p class=ft>회색 굵은 글자</p>
+    <p style="font-variant:small-caps">seoul SEOUL</p>
+    <div class=fts>font:italic 25px 궁서체</div>
+</body>
+
+</html>
