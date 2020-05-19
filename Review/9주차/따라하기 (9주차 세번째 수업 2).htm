@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 속성</title>
+    <style>
+        p {
+            font-weight: bold;
+            font-size: 70px;
+            color: red
+        }
+
+        p.highlight {
+            color: silver
+        }
+
+        p.shadow {
+            color: darkred
+        }
+    </style>
+</head>
+
+<body>
+    <b>위치 속성 - 텍스트 겹치기</b>
+    <hr>
+    <font style="font-size:30px;font-style:italic">WELCOME TO</font>
+    <div style="position:absolute;top:55px;left:35px">
+        <p class=shadow>우리들의 세상</p>
+    </div>
+    <div style="position:absolute;top:50px;left:30px">
+        <p class=highlight>우리들의 세상</p>
+    </div>
+    <div style="position:absolute;top:52px;left:32px">
+        <p>우리들의 세상</p>
+    </div>
+</body>
+
+</html>
