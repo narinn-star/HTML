@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리 속성</title>
+    <style>
+        .border {
+            border: 2px solid navy;
+            padding: 20px;
+            background: skyblue;
+            font-size: 15pt;
+            font-weight: bold;
+            width: 300;
+            text-align: center;
+        }
+
+        .b1 {
+            border-bottom-left-radius: 50px
+        }
+
+        .b2 {
+            border-bottom-right-radius: 30px
+        }
+
+        .b3 {
+            border-top-left-radius: 20px
+        }
+
+        .b4 {
+            border-top-right-radius: 10px
+        }
+
+        .b5 {
+            border-radius: 25px
+        }
+    </style>
+</head>
+
+<body>
+    <b>테두리 속성</b>
+    <hr>
+    <div class="border b1">왼쪽 아래 곡선 테두리</div><br>
+    <div class="border b2">오른쪽 아래 곡선 테두리</div><br>
+    <div class="border b3">왼쪽 위 곡선 테두리</div><br>
+    <div class="border b4">오른쪽 위 곡선 테두리</div><br>
+    <div class="border b5">전체 곡선 테두리</div><br>
+</body>
+
+</html>

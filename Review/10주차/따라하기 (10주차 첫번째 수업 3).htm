@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 속성</title>
+    <style>
+        p {
+            font-size: 18pt;
+            line-height: 30pt;
+            text-align: justify;
+        }
+
+        .left {
+            float: left;
+            margin: 15px
+        }
+
+        .clear {
+            clear: left
+        }
+    </style>
+</head>
+
+<body>
+    <b>목록 속성 - float & clear</b>
+    <hr>
+    <img src='mask.jpg' class=left>
+    <p>이 글은 그림의 오른쪽에 놓이게 된다. 왜냐하면 float속성의 속성값을 left로 지정했기 때문이다.</p>
+    <p class=clear>
+        이 글은 clear속성으로 left정렬을 해제하였기 때문에 그림의 다음 줄에 놓이게 된다.
+    </p>
+</body>
+
+</html>
