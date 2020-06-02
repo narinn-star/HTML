@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이어 만들기</title>
+    <style>
+        body {
+            font-size: 20pt;
+        }
+
+        #layer3 {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            height: 200px;
+            width: 300px;
+            z-index: 3;
+            background-color: green;
+        }
+
+        #layer2 {
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            height: 200px;
+            width: 300px;
+            z-index: 2;
+            background-color: yellow;
+        }
+
+        #layer1 {
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            height: 200px;
+            width: 300px;
+            z-index: 1;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <b>레이어 만들기</b>
+    <hr>
+    <div id=layer3></div>
+    <div id=layer2></div>
+    <div id=layer1></div>
+</body>
+
+</html>

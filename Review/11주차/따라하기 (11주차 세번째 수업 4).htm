@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute vs relative</title>
+    <style>
+        body {
+            margin: 0px;
+            font-size: 20pt
+        }
+
+        #layer1 {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            height: 200px;
+            width: 300px;
+            z-index: 1;
+            background-color: green
+        }
+
+        #layer2 {
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            height: 200px;
+            width: 300px;
+            z-index: 2;
+            background-color: yellow;
+        }
+
+        #layer3 {
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            height: 200px;
+            width: 300px;
+            z-index: 3;
+            background-color: red;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src=mask.jpg>
+    <div id=layer1><img src=mask.jpg></div>
+    <div id=layer2>2</div>
+    <div id=layer3>3</div>
+</body>
+
+</html>

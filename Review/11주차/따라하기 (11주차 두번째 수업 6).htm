@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이어 만들기</title>
+    <style>
+        body {font-size: 20pt;}
+
+        #layer {
+            position:absolute;
+            left:100px;
+            top:100px;
+            height:400px;
+            width:400px;
+            background-color:blue;
+        }
+
+        #layer img {
+            width:250px;
+            height:300px;
+            padding:50px 70px;
+        }
+    </style>
+</head>
+<body>
+    <b>레이어 속 이미지 padding으로 위치 변경</b>
+    <hr>
+    <div id=layer>
+        <img src=mask.jpg>
+    </div>
+</body>
+</html>

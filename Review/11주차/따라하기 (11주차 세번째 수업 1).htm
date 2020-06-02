@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이어 만들기</title>
+    <style>
+        body {
+            font-size: 20pt;
+        }
+
+        #layer1 {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            height: 200px;
+            width: 320px;
+            z-index: 1;
+            background-color: green;
+        }
+
+        #layer2 {
+            position: absolute;
+            left: 150px;
+            top: 200px;
+            height: 200px;
+            width: 320px;
+            z-index: 2;
+            background-color: yellow;
+        }
+
+        #layer3 {
+            position: absolute;
+            left: 250px;
+            top: 300px;
+            height: 200px;
+            width: 320px;
+            z-index: 3;
+            background-color: red;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <b>레이어 감추기/보이기</b>
+    <hr>
+    <div id=layer1></div>
+    <div id=layer2 onmousedown="layer3.style.visibility='visible'" onmousemove="layer3.style.visibility='hidden'">
+        노란 레이어를 클릭하세요!</div>
+    <div id=layer3></div>
+</body>
+
+</html>

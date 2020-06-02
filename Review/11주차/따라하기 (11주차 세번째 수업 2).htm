@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip 속성</title>
+    <style>
+        #layer1 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+        #layer2 {
+            position: absolute;
+            top: 300px;
+            left: 20px;
+            clip: rect(100px, 300px, 200px, 150px)
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <b>Clip 속성(보이게 할 영역 설정하기)</b>
+    <hr>
+    <div id=layer1><img src=mask.jpg></div>
+    <div id=layer2><img src=mask.jpg></div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        #layer1 {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            height: 250px;
+            width: 430px;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        #layer2 {
+            position: absolute;
+            left: 50px;
+            top: 330px;
+            height: 250px;
+            width: 430px;
+            background-color: yellow;
+            overflow: scroll;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=layer1><img src="koala.jpg"><img src="koala.jpg"><img src="koala.jpg">
+    </div>
+    <div id=layer2><img src="koala.jpg"><img src="koala.jpg"><img src="koala.jpg">
+    </div>
+</body>
+
+</html>
