@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11주차 실습과제</title>
+    <style>
+        body {
+            background-color: darkturquoise
+        }
+
+        h2 {
+            font-size: 25pt;
+            font-family: "굴림체";
+            color: maroon;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 25pt;
+            font-family: "HY동녘B";
+            color: salmon;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h3 {
+            font-size: 20pt;
+            font-family: "휴먼엑스포";
+            color: teal;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content1 {
+            font-size: 20pt;
+            font-family: "휴먼옛체";
+            color: firebrick;
+            text-align: center;
+        }
+
+        .content2 {
+            font-size: 20pt;
+            font-family: "궁서체";
+            color: purple;
+            text-align: center;
+        }
+
+        .content3 {
+            font-size:20pt;
+            font-family:"휴먼매직체";
+            color:springgreen;
+            text-align:center;
+            padding:30px;
+        }
+        #layer1 {
+            position: absolute;
+            left: 140px;
+            top: 70px;
+            height: 500px;
+            width: 900px;
+            z-index: 1;
+            background-color: mediumpurple;
+        }
+
+        #layer2 {
+            position: absolute;
+            left: 240px;
+            top: 160px;
+            height: 500px;
+            width: 900px;
+            z-index: 2;
+            background-color: palegreen;
+            visibility: hidden;
+        }
+
+        #layer3 {
+            position: absolute;
+            left: 340px;
+            top: 250px;
+            height: 500px;
+            width: 900px;
+            z-index: 3;
+            background-color: plum;
+            visibility: hidden;
+        }
+
+        #layer4 {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            height:300px;
+            width:330px;
+            z-index:4;
+            background-color:orchid;
+            float:left;
+        }
+
+        #layer5 {
+            position: absolute;
+            left: 460px;
+            top: 100px;
+            height: 300px;
+            width: 330px;
+            z-index: 4;
+            background-color:orchid;
+            float:right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=layer1 onmousedown="layer2.style.visibility='visible'" onmouseover="layer2.style.visibility='hidden'">
+        <h2>전산기초실습 실습과제</h2>
+        <p class=content1>이 레이어를 클릭하면 다음 레이어가 나타납니다.</p>
+    </div>
+
+    <div id=layer2 onmousedown="layer3.style.visibility='visible'">
+        <h1>학번: 20203179 이름: 이 나 린</h1><br>
+        <p class=content2>이 레이어를 클릭하면 다음 레이어가 나타납니다.<br><br>
+            보라색 레이어에 마우스 포인터를 올리면 이 레이어가 사라집니다.</p>
+    </div>
+
+    <div id=layer3 onmousedown="layer3.style.visibility='hidden'">
+        <h3>이 레이어를 숨기고 싶다면 이 레이어를 클릭하세요!</h3>
+        <div id=layer4 class=content3><br><br>왼쪽 레이어입니다. <br><br> float 속성을 사용하여 왼쪽에 배치하세요.</div>
+        <div id=layer5 class=content3><br><br>오른쪽 레이어입니다. <br><br> float 속성을 사용하여 오른쪽에 배치하세요.</div>
+    </div>
+</body>
+
+</html>
