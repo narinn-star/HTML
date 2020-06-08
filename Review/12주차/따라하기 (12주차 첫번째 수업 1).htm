@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 레이아웃</title>
+    <style>
+        body {
+            margin: 0px;
+            font-size: 15pt
+        }
+
+        header {
+            height: 100px;
+            padding: 20px;
+            background-color: pink;
+        }
+
+        nav {
+            width: 200px;
+            height: 60%;
+            padding: 20px;
+            background-color: lightblue;
+            float: left
+        }
+
+        article {
+            height: 250px;
+            padding: 20px;
+            background-color: yellowgreen;
+        }
+
+        footer {
+            height: 310px;
+            padding: 20px;
+            background-color: tan;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header> (Header 영역)
+        <p>Semantic 태그를 이용한 레이아웃</p>
+    </header>
+    <nav> (Naigation Link 영역)
+        <ul>
+            <li><a href="#">메뉴1</a></li><br>
+            <li><a href="#">메뉴2</a></li><br>
+            <li><a href="#">메뉴3</a></li><br>
+            <li><a href="#">메뉴4</a></li><br>
+        </ul>
+    </nav>
+    <article>(Article 영역)</article>
+    <footer>(Footer 영역)</footer>
+</body>
+
+</html>

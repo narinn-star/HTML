@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 레이아웃</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+        }
+
+        #header {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            padding: 10px;
+            height: 100px;
+            width: 100%;
+            background-color: pink;
+        }
+
+        #nav {
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            padding: 10px;
+            height: 500px;
+            width: 20%;
+            background-color: lightblue;
+        }
+
+        #section_1 {
+            position: absolute;
+            left: 20%;
+            top: 100px;
+            padding: 10px;
+            height: 300px;
+            width: 80%;
+            background-color: tan;
+        }
+
+        #section_2 {
+            position: absolute;
+            left: 20%;
+            top: 400px;
+            padding: 10px;
+            height: 200px;
+            width: 80%;
+            background-color: orange;
+        }
+
+        #footer {
+            position: absolute;
+            left: 0px;
+            top: 600px;
+            padding: 10px;
+            height: 150px;
+            width: 100%;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=header>(Header 영역)<p>Div 태그와 Position 속성을 이용한 레이아웃</p>
+    </div>
+    <div id=nav>(Navigation Link 영역)</div>
+    <div id=section_1>(Section_1 영역)</div>
+    <div id=section_2>(Section_2 영역)</div>
+    <div id=footer>(Footer 영역)</div>
+</body>
+
+</html>
