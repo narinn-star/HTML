@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 레이아웃</title>
+    <style>
+        body {
+            margin: 0px;
+            font-size: 15pt;
+        }
+
+        #header {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 10%;
+            padding: 20px;
+            background-color: red;
+        }
+
+        #nav {
+            position: absolute;
+            left: 0px;
+            top: 10%;
+            width: 100%;
+            height: 10%;
+            padding: 20px;
+            margin: 0px;
+            background-color: skyblue;
+        }
+
+        #aside {
+            position: absolute;
+            left: 70%;
+            top: 20%;
+            width: 30%;
+            height: 80%;
+            padding: 20px 50px;
+            margin: 0px;
+            background-color: yellow;
+        }
+
+        #section {
+            position: absolute;
+            left: 0px;
+            top: 20%;
+            width: 70%;
+            height: 70%;
+            padding: 20px;
+            margin: 0px;
+            background-color: green;
+        }
+
+        #footer {
+            position: absolute;
+            left: 0px;
+            top: 90%;
+            width: 70%;
+            height: 10%;
+            padding: 20px;
+            background-color: pink;
+        }
+
+        li {
+            float: left;
+            white-space: pre
+        }
+
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+
+<body>
+    <div id=header>(Header 영역)
+        <p> Div 태그와 Position을 이용한 레이아웃</p>
+    </div>
+    <div id=nav>(Navigation Link)
+        <ul>
+            <li><a href="#">메뉴1 </a></li>
+            <li><a href="#">메뉴2 </a></li>
+            <li><a href="#">메뉴3 </a></li>
+            <li><a href="#">메뉴4 </a></li>
+        </ul>
+    </div>
+    <div id=aside>(Aside 영역)</div>
+    <div id=section>(Section 영역)</div>
+    <div id=footer>(Footer 영역)</div>
+</body>
+
+</html>
