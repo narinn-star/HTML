@@ -65,3 +65,11 @@ HTML 중간고사
 > 13주차
 
 form 태그 / input 태그 / textarea 태그 / select 태그
+
+
+
++ Java Script
+
+> 14주차
+
+내부, 외부, 인라인 자바스크립트 / 연산자 사용 / While / 함수선언 / 메서드
