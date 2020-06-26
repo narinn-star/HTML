@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14주차 실습과제</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            background-color: cadetblue;
+            font-size: 32pt;
+            color: white;
+            text-shadow: 5px 5px 5px darkblue;
+            height: 150px;
+            width: 1447px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        nav {
+            background-color: lightskyblue;
+            height: 450px;
+            width: 402px;
+            padding: 5px;
+            float: left;
+        }
+
+        section {
+            background: url(pizza.jpg) repeat-y right;
+            background-color: lightcoral;
+            width: 1035px;
+            height: 450px;
+            padding: 5px;
+            float: left;
+        }
+
+        footer {
+            background-color: mediumturquoise;
+            height: 130px;
+            width: 1447px;
+            padding: 5px;
+            font-size: 20pt;
+            font-family: 궁서체;
+            text-align: center;
+            float: left;
+        }
+
+        #layer1 {
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            border: double 5px teal;
+            box-shadow: 5px 5px 5px dodgerblue;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            font-size: 20pt;
+            color: white;
+        }
+
+        #layer2 {
+            position: absolute;
+            left: 50px;
+            top: 350px;
+            border: double 5px teal;
+            box-shadow: 5px 5px 5px dodgerblue;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            font-size: 20pt;
+            color: white;
+        }
+
+        #layer3 {
+            position: absolute;
+            left: 500px;
+            top: 200px;
+            background-color: pink;
+            width: 600px;
+            height: 120px;
+            text-align: center;
+            font-size: 20pt;
+            color: white;
+            visibility: hidden;
+        }
+
+        #layer4 {
+            position: absolute;
+            left: 520px;
+            top: 250px;
+            background-color: powderblue;
+            width: 700px;
+            height: 320px;
+            visibility: hidden;
+            padding: 30px;
+        }
+
+        img {
+            border: 8px double thistle;
+            height: 160px;
+            width:160px;
+            float:right;
+            margin: 80px 60px 80px 60px;
+        }
+
+        font {
+            font-size: 18pt;
+            font-family: 휴먼옛체;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>전산기초실습 실습과제</p>
+    </header>
+    <nav></nav>
+    <div id=layer1 onmousedown="layer3.style.visibility='visible'">
+        <p>당신의 나이는?</p>
+    </div>
+    <div id=layer2 onmousedown="layer4.style.visibility='visible'">
+        <p>피자 주문하기</p>
+    </div>
+    <section></section>
+    <div id=layer3>
+        <script>
+            var a = prompt("태어난 년도를 입력하요 주세요!", "2001")
+            document.write("<p>당신의 나이는 " + (2020 - a + 1));
+            document.write("세 입니다.");
+        </script>
+    </div>
+    <div id=layer4>
+        <img src="pizza.jpg">
+        <hr color="white"><br>
+        <font>주문자 : </font><input type="text" size=30><br>
+        <font>연락처 : </font><input type="text" size=30><br><br>
+        <fieldset align=left>
+            <legend>피자 크기</legend>
+            <input type="radio" name="size">Small
+            <input type="radio" name="size">Medium
+            <input type="radio" name="size">Large
+            <input type="radio" name="size">Family
+        </fieldset><br>
+        <fieldset align=left>
+            <legend>피자 토핑</legend>
+            <input type="checkbox" name="불고기" value="불고기">불고기
+            <input type="checkbox" name="새우" value="새우">새우
+            <input type="checkbox" name="버섯" value="버섯">버섯
+            <input type="checkbox" name="양파" value="양파">양파
+            <input type="checkbox" name="치즈" value="치즈">치즈
+        </fieldset><br>
+        <font>배달 시간 : </font><select>
+            <option>오전
+            <option>오후
+        </select>
+        <select>
+            <option>1
+            <option>2
+            <option>3
+            <option>4
+            <option>5
+            <option>6
+            <option>7
+            <option>8
+            <option>9
+            <option>10
+            <option>11
+            <option>12
+        </select>
+        <select>
+            <option>10분
+            <option>20분
+            <option>30분
+            <option>40분
+            <option>50분
+        </select>
+        <input type="button" value="주문하기"><br>
+        <hr color="white">
+    </div>
+    <footer>학번: 20203179 이름: 이나린</footer>
+</body>
+
+</html>
