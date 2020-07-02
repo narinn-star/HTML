@@ -1,0 +1,205 @@
+﻿<html>
+<head>
+<title>기말고사 대비</title>
+	<style>
+		body {
+			margin : 0;
+			padding : 0;
+			}
+			
+		#header {
+			position:absolute;
+			left: 0;
+			top: 0;
+			background-color: lightblue;
+			width: 100%;
+			height: 20%;
+			padding: 5;
+			text-align: center;
+			font-size: 34pt;
+			color: white;
+			text-shadow: 5 5 5 blue;
+			font-family: "HY울릉도M";
+			}
+		
+		#nav {
+			position: absolute;
+			left:0;
+			top: 163;
+			background-color:lightcoral;
+			width: 30%;
+			height:60%;
+			padding: 5;
+			float:left;
+			}
+		
+		#section {
+			position: absolute;
+			left:437;
+			top:163;
+			background : url("pizza.jpg") repeat-y right;
+			background-color : yellowgreen;
+			width:70%;
+			height:60%;
+			padding: 5;
+			float:left;
+			}
+		
+		#footer {
+			position: absolute;
+			left:0;
+			top:633;
+			background-color: black;
+			width:100%;
+			height:20%;
+			padding: 5;
+			float:clear;
+			text-align: center;
+			font-size: 25pt;
+			font-family :"한컴 바겐세일 M";
+			color: white;
+			}
+			
+		#layer1 {
+			position: absolute;
+			left: 65;
+			top:200;
+			width:20%;
+			height:100;
+			border : double 5 red;
+			color:white;
+			text-align: center;
+			font-size:25pt;
+			font-family: 궁서체;
+			}
+			
+		#layer2 {
+			position: absolute;
+			left: 65;
+			top: 350;
+			width:20%;
+			height:100;
+			border: double 5 red;
+			color:white;
+			text-align: center;
+			font-size: 25pt;
+			font-family: 궁서체;
+			}
+		
+		#layer3 {
+			position: absolute;
+			left: 470;
+			top: 200;
+			width:40%;
+			height:130;
+			background-color: green;
+			visibility:hidden;
+			color:white;
+			text-align:center;
+			font-size: 28pt;
+			font-family: 함초롬바탕;
+			}
+			
+		#layer4 {
+			position: absolute;
+			left: 450;
+			top: 220;
+			width:55%;
+			height: 320;
+			background-color:teal;
+			visibility:hidden;
+			color:white;
+			font-size:15pt;
+			font-family: 함초롱바탕;
+			padding:20;
+			}
+		
+		img {
+			border: double 5 white;
+			float: right;
+			width: 180;
+			height: 180;
+			margin: 60;
+			}
+			
+		font {
+			font-size: 15pt;
+			color:pink;
+			font-family: 휴먼편지체;
+			}
+	</style>
+</head>
+<body>
+	<script>
+		function age(x){
+			age = 2020-x+1;
+			return age;
+			}
+	</script>
+	<div id=header><p>전산기초실습 실습과제</p></div>
+	<div id=nav></div>
+	<div id=layer1 onMouseDown="layer3.style.visibility='visible'">
+		<p>당신의 나이는?</p>
+	</div>
+	<div id=layer2 onMouseDown="layer4.style.visibility='visible'">
+		<p>피자 주문하기</p>
+	</div>
+	<div id=section></div>
+	<div id=layer3>
+		<script>
+			x=prompt("태어난 년도를 입력하여 주세요!", "2001");
+			document.write("<p>당신의 나이는 " + age(x) + "세 입니다.</p>");
+		</script>
+	</div>
+	<div id=layer4>
+		<img src="pizza.jpg">
+		<hr color=white><br>
+		<font>주문자 : </font><input type="text" size=40><br>
+		<font>연락처 : </font><input type="text" size=40><br><br>
+		<fieldset>
+			<legend><font>피자 크기</font></legend>
+			<input type="radio" name="size">Small
+			<input type="radio" name="size">Medium
+			<input type="radio" name="size">Large
+			<input type="radio" name="size">Family
+		</fieldset><br>
+		<fieldset>
+			<legend><font>피자 토핑</font></legend>
+			<input type="checkbox" name="불고기" value="불고기">불고기
+			<input type="checkbox" name="새우" value="새우">새우
+			<input type="checkbox" name="버섯" value="버섯">버섯
+			<input type="checkbox" name="양파" value="양파">양파
+			<input type="checkbox" name="치즈" value="치즈">치즈
+		</fieldset><br>
+		<font>배달 시간 : </font>
+		<select>
+			<option>오전
+			<option>오후
+		</select>
+		<select>
+			<option>1시
+			<option>2시
+			<option>3시
+			<option>4시
+			<option>5시
+			<option>6시
+			<option>7시
+			<option>8시
+			<option>9시
+			<option>10시
+			<option>11시
+			<option>12시
+		</select>
+		<select>
+			<option>10분
+			<option>20분
+			<option>30분
+			<option>40분
+			<option>50분
+		</select>
+		<input type="button" value="주문하기"><br>
+		<hr color=white>
+	</div>
+	<div id=footer>학번 : 20203179 이름 : 이나린</div> 
+</body>
+</html>

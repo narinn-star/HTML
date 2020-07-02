@@ -1,0 +1,147 @@
+﻿<html>
+<head><title>기말고사 대비</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			}
+		
+		legend {
+			font-size:15pt;
+			}
+		#header {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width:100%;
+			height:25%;
+			background-color: pink;
+			text-align: center;
+			font-size: 32pt;
+			font-family: "HY울릉도M";
+			color: white;
+			padding: 10;
+			}
+			
+		#left {
+			position: absolute;
+			left: 0;
+			top: 215;
+			width:45%;
+			height:70%;
+			background-color:skyblue;
+			text-align:center;
+			font-size:10pt;
+			padding:40;
+			}
+			
+		#right {
+			position: absolute;
+			left:734;
+			top:215;
+			width:663;
+			height:550;
+			background-color:lightgreen;
+			text-align:center;
+			font-size:15pt;
+			font-weight:bold;
+			padding:40;
+			}
+			
+		.color_red {
+			color:red;
+			font-style:italic;
+			}
+			
+		.second {
+			font-size: 15pt;
+			}
+			
+		#layer1 {
+			position:absolute;
+			left:600;
+			top:200;
+			width:30%;
+			height:150;
+			background-color:yellow;
+			font-size:15pt;
+			padding:10;
+			visibility: hidden;
+			text-align: center;
+			}
+			
+		.layer1_title{
+			width: 160;
+			height: 30;
+			border : solid 1 black;
+			border-radius: 7px;
+			font-size: 15pt;
+			}
+			
+		ul li {
+			float: left;
+			text-align: center;
+			}
+	</style>
+</head>
+<body>
+	<div id=header><p>당신의 방문을 <font class=color_red>환영합니다!!!</font></p>
+		<font class=second onmouseover="layer1.style.visibility='visible'"
+							onmouseout="layer1.style.visibility='hidden'">
+		여기에 마우스 포인터를 올려 주세요.
+		</font>
+	</div>
+	<div id=left>
+		<fieldset>
+			<legend align=center>당신은 누구입니까?</legend>
+			<br><br>
+			이름 <input type=text size=15>
+			&nbsp;&nbsp;학과 <input type=text size=20>
+			&nbsp;&nbsp;학번 <input type=text size=15> <br><br>
+			
+			당신의 취미는?<br><br>
+			<input type=radio name=hobby>독서
+			<input type=radio name=hobby>영화관람
+			<input type=radio name=hobby>음악감상
+			<input type=radio name=hobby>악기연주
+			<input type=radio name=hobby>여행
+			<input type=radio name=hobby>기타 <br><br>
+			
+			가장 좋아하는 색상은?<br><br>
+			<select size=4>
+				<option value=red>빨강
+				<option value=orange>주황
+				<option value=yellow>노랑
+				<option value=green>초록
+			</select> <br><br>
+			
+			자기소개<br><br>
+			<textarea rows=5 cols=20></textarea><br><br><br>
+			<input type=button value="입력완료">
+			<input type=button value="입력취소"><br><br>
+		</fieldset>
+	</div>
+	
+	<div id=right>별을 좋아하면 확인버튼을 클릭하고<br>
+				하트를 좋아하면 취소버튼을 클릭하세요<br>
+		<script>
+			if (confirm("별을 좋아합니까?")){
+				for (i=1; i<=10; i++)
+				{document.write("★★★★★★★★★★★★<br>");}
+				}
+			else {
+				for (i=1; i<=10; i++)
+				{document.write("♥♥♥♥♥♥♥♥♥♥♥♥<br>");}
+				}
+		</script>
+	</div>
+	
+	<div id=layer1><font class=layer1_title>전산기초실습</font>
+		<ul>
+			<li> html &nbsp;&nbsp;&nbsp; <li> css &nbsp;&nbsp;&nbsp;
+			<li> cgi &nbsp;&nbsp;&nbsp; <li> javascript
+		</ul><br><br>
+		<p>한 학기 동안 수고 많았습니다.</p>
+	</div>
+</body>
+</html>
