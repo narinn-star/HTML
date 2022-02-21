@@ -1,9 +1,47 @@
 <!DOCTYPE html> 
 
-<title>My First Website</title>
+<html>
+  <head>
+    <title>My First Website</title>
+    <meta charset="utf-8">
 
-<h1>My First Page</h1>
-<h2>I love HTML!</h2>
+    <style> /* <style> 내에는 CSS 코드 */
+    h1 {
+      font-size: 64px;
+      text-align: center;
+    }
+    
+    h2 {
+      color: plum;
+    }
+    
+    h3 {
+      margin-top: 100px;
+    }
+    
+    p i { /* p 태그 안에 있는 i만 스타일링 하겠다. */
+      font-size: 48px; 
+    }
+    </style>
+  </head>
 
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <body>
+    <h1>My First Page</h1>
+    <h2>I <i>love</i> HTML!</h2>
+    <h3>Hello world! 한글도 안깨져요</h3>
+
+    <img src = "images/cat.jpg" width="400">
+
+    <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipiscing elit, 
+    sed do eiusmod <i>tempor</i> incididunt ut labore et dolore magna aliqua.</p>
+
+    <a href = "https://google.com">Google</a>
+    <a href = "https://naver.com" target="_blank">Naver</a>
+    <br>
+    <a href = "folder01/page01.html">page 01</a> <br>
+    <a href = "folder01/folder02/page02.html">page 02</a>
+  </body>
+  <!--Phrase Tags
+        <strong> == <b> (볼드체)
+        <em> == <i> (이탤릭체)  -->
+</html>
