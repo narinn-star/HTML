@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>id/class example</title>
+    <meta charset="utf-8">
+    <style>
+      .big-blue-text {
+        font-size: 64px;
+        color: blue;
+      }
+
+      .centered-text {
+        text-align: center;
+      }
+
+      #best-text {
+        color: orange; 
+      }
+      /* 1. 같은 클래스 이름을 여러 요소가 가질 수 있지만, 같은 아이디를 여러 요소가 공유할 수는 없다.
+         2. 한 요소가 여러 클래스를 가질 수 있지만, 한 요소는 하나의 아이디만 가질 수 있다. 
+            (단, 한 요소가 클래스도 여러 개 갖고 아이디도 하나 가질 수 있다!) */
+    </style>
+    </head>
+
+    <body>
+      <h1 class="centered-text">Heading 1</h1>
+      <h2 class="big-blue-text centered-text">Heading 2</h2>
+
+      <p id="best-text">첫 번째 문단</p>
+      <p>두 번째 문단</p>
+      <p class="big-blue-text">세 번째 문단</p>
+      <p>네 번째 문단</p>
+    </body>
+</html>
