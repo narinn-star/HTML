@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Box Model</title>
+  <meta charset="utf-8">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: lightgray;
+    }
+
+    h1 {
+      width: 300px;
+      height: 120px;
+      padding: 30px;
+      border: 5px solid skyblue;
+    }
+
+    .p1 {
+      width: 400px;
+      border: 5px solid green;
+      padding: 50px;
+      border-radius: 50px;
+      /* background-color: #5cca6b; */
+      background-color: transparent;
+      box-shadow: 20px 10px 10px 5px rgb(6, 88, 6);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Box Model</h1>
+  <p class="p1">border-radius를 이용해서 박스 꾸미기. 네 모서리 모두 다르게 radius 설정 가능<br>
+    background-color를 이용해서 배경색 적용하기. background-color: transparent는 배경색을 투명하게 함(body의 배경색이 보이도록 박스가 투명)<br>
+    box-shadow를 이용해서 박스의 그림자 설정하기 (가로, 세로, 선명도, 크기, 색상)<br>
+    box-sizing: border-box는 박스 내용물의 가로 세로 크기를 width, height 크기에 알맞게 padding과 조절하여 만들어줌
+  </p>
+  <p class="p2"></p>
+</body>
+</html>
