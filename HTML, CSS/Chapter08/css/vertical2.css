@@ -1,0 +1,19 @@
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
